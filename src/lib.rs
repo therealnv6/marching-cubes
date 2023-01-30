@@ -31,7 +31,7 @@
 //!
 //! The `MarchingCubes` struct is the main entry point to the library.
 //! The `new` method creates a new instance of the algorithm and takes two arguments: the 3D volumetric data as a nested array of scalar values and the isovalue used to extract the isosurface.
-//! The `run` method executes the algorithm and returns the resulting vertices as a vector of 3D points.
+//! The `polygonise` method executes the algorithm and returns the resulting vertices as a vector of 3D points.
 //!
 //! Note that the example code uses a 4x4x4 volume for simplicity, but in practice the volume size can be much larger and the algorithm will scale accordingly.
 
