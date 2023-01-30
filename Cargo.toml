@@ -4,7 +4,13 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "A marching cubes implementation in Rust"
+repository = "https://github.com/therealnv6/marching_cubes"
+keywords = ["game", "voxels", "isosurface", "marching"]
+crate-type = ["lib"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+glam = []
 
 [dependencies]
