@@ -7,8 +7,6 @@ A Rust implementation of the marching cubes algorithm for extracting isosurfaces
 
 ## Examples
 ```rs
-## Examples
-
 use marching_cubes::{MarchingCubes, GridCell, Triangle};
 
 let grid = GridCell {
