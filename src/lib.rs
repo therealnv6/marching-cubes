@@ -28,7 +28,7 @@
 //! let triangle_count = mc.polygonise(&mut triangles);
 //!
 //! assert_eq!(triangle_count, 4);
-//!
+//! ```
 //! The `MarchingCubes` struct is the main entry point to the library.
 //! The `new` method creates a new instance of the algorithm and takes two arguments: the 3D volumetric data as a nested array of scalar values and the isovalue used to extract the isosurface.
 //! The `polygonise` method executes the algorithm and returns the resulting vertices as a vector of 3D points.
