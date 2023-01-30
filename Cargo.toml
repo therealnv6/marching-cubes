@@ -4,7 +4,7 @@ version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "A marching cubes implementation in Rust"
-repository = "https://github.com/therealnv6/marching_cubes"
+repository = "https://github.com/therealnv6/marching-cubes"
 keywords = ["game", "voxels", "isosurface", "marching"]
 crate-type = ["lib"]
 
