@@ -21,18 +21,19 @@ A Rust implementation of the marching cubes algorithm for extracting isosurfaces
 use iso::{MarchingCubes, GridCell, Triangle};
 
 let grid = GridCell {
-positions: [
-[0.0, 0.0, 0.0],
-[1.0, 0.0, 0.0],
-[1.0, 1.0, 0.0],
-[0.0, 1.0, 0.0],
-[0.0, 0.0, 1.0],
-[1.0, 0.0, 1.0],
-[1.0, 1.0, 1.0],
-[0.0, 1.0, 1.0]
-],
-value: [0.0, 0.5, 0.5, 1.0, 0.0, 1.0, 1.0, 0.0],
+    positions: [
+        [0.0, 0.0, 0.0],
+        [1.0, 0.0, 0.0],
+        [1.0, 1.0, 0.0],
+        [0.0, 1.0, 0.0],
+        [0.0, 0.0, 1.0],
+        [1.0, 0.0, 1.0],
+        [1.0, 1.0, 1.0],
+        [0.0, 1.0, 1.0]
+    ],
+    value: [0.0, 0.5, 0.5, 1.0, 0.0, 1.0, 1.0, 0.0],
 };
+
 let mut triangles = vec![];
 
 let isolevel = 0.5;
