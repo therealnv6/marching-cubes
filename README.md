@@ -1,4 +1,4 @@
-# iso
+# marching-cubes
 A Rust implementation of the marching cubes algorithm for extracting isosurfaces from 3D volumetric data.
 
 ## Features
@@ -7,15 +7,6 @@ A Rust implementation of the marching cubes algorithm for extracting isosurfaces
 
 ## Examples
 ```rs
-markdown
-
-# iso
-A Rust implementation of the marching cubes algorithm for extracting isosurfaces from 3D volumetric data.
-
-## Features
-- Fast and efficient
-- Commonly used in computer graphics, medical imaging, and scientific visualization
-
 ## Examples
 
 use iso::{MarchingCubes, GridCell, Triangle};
