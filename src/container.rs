@@ -15,7 +15,7 @@ pub fn vector3(x: f32, y: f32, z: f32) -> Vec3 {
 
     #[cfg(not(feature = "glam"))]
     {
-        return Vec3 { x, y, z };
+        return [x, y, z];
     }
 }
 
@@ -27,7 +27,7 @@ pub fn vector2(x: f32, y: f32) -> Vec2 {
 
     #[cfg(not(feature = "glam"))]
     {
-        return Vec2 { x, y };
+        return [x, y];
     }
 }
 
@@ -46,18 +46,10 @@ pub mod glam {
 }
 
 pub mod inner {
-    pub type Vector3 = InnerVector3;
-    pub type Vector2 = InnerVector2;
+    pub type Vector3 = [f32; 3];
+    pub type Vector2 = [f32; 2];
+}
 
-    #[derive(Debug, Clone, Copy)]
-    pub struct InnerVector3 {
-        pub x: f32,
-        pub y: f32,
-        pub z: f32,
-    }
-
-    pub struct InnerVector2 {
-        pub x: f32,
-        pub y: f32,
-    }
+pub trait TriangleShape {
+    fn get_points() -> (f32, f32, f32);
 }
